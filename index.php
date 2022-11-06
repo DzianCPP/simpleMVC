@@ -1,5 +1,12 @@
 <?php
 
 require_once "application/lib/dev.php";
+require_once "application/core/autoloader.php";
 
-echo "Hello";
+use application\core\Router;
+use application\lib\Database;
+
+session_start();
+
+$router = new Router();
+$database = new Database();
