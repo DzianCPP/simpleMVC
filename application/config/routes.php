@@ -1,11 +1,20 @@
 <?php
 
 return [
-    'public' =>
-        ['controller' => 'public',
-        'action' => 'index'],
 
-    'hello/sayHello' =>
-        ['controller' => 'hello',
-        'action' => 'sayHello']
+    '' => [
+        'controller' => 'main',
+        'action' => 'index',
+    ],
+
+    'account/login' => [
+        'controller' => 'account',
+        'action' => 'login',
+    ],
+
+    'account/register' => [
+        'controller' => 'account',
+        'action' => 'register',
+    ],
+
 ];
